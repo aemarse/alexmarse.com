@@ -1,0 +1,50 @@
+body {
+  margin: 0px;
+}
+
+.navbar {
+  background-color: #14274e;
+  height: 4.25rem;
+  width: 100%;
+}
+
+.navbar-header {
+  float: left;
+  margin: 1.25rem 0 .75rem 1.25rem;
+}
+
+.navbar-links {
+  float: right;
+  margin: 1.25rem 1.25rem .75rem 0;
+}
+
+.navbar-link {
+  font-size: 1.25rem;
+  padding-left: 15px;
+  color: #f1f6f9;
+  text-decoration: none;
+}
+
+.banner-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.banner-h1 {
+  position: absolute;
+  top: 8rem;
+  left: 5rem;
+}
+
+.banner-h3 {
+  position: absolute;
+  top: 11rem;
+  left: 5rem;
+}
+
+.banner-cta {
+  position: absolute;
+  top: 15rem;
+  left: 5rem;
+}
