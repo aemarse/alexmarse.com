@@ -23,38 +23,53 @@
     </nav>
 
     <div class="container">
-      <div class="banner">
-        <img class="banner-image" src="images/banner.png" alt="Banner">
-        <h1 class="banner-h1">Fast Websites</h1>
-        <h3 class="banner-h3">Amazing Service</h3>
-        <button class="banner-cta" type="button" name="ctaButton">Get In Touch</button>
+      <div class="about-container">
+        <section class="about-section" id="about">
+          <div class="about-text">
+            <h1>Hey! I'm Alex.</h1>
+            <p>This is a paragraph about me. This is a paragraph about me. This is a paragraph about me. This is a paragraph about me. This is a paragraph about me.</p>
+          </div>
+          <div class="about-image">
+            <img src="images/Alex.jpeg" alt="Profile Picture">
+          </div>
+        </section>
       </div>
-
-      <div class="portfolio-grid">
-        <img class="portfolio-img" src="images/portfolio.png" alt="">
-        <img class="portfolio-img" src="images/portfolio.png" alt="">
-        <img class="portfolio-img" src="images/portfolio.png" alt="">
+      <div class="nyu-container">
+        <section class="nyu-section" id="nyu">
+          <div class="nyu-image">
+            <img src="images/Alex.jpeg" alt="Profile Picture">
+          </div>
+          <div class="nyu-text">
+            <h1>I'm a Master of Music Technology.</h1>
+            <h3>New York University, 2014</h3>
+            <table>
+              <tr>
+                <th><b>Key Courses:</b></th>
+                <td>C Programming, Digital Signal Theory</td>
+              </tr>
+              <tr>
+                <th><b>Key Project:</b></th>
+                <td><a class="body-link" href="http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/citygram-one-visualizing-urban-acoustic-ecology.1.html" target="_blank">Citygram One: Visualizing Urban Acoustic Ecology</a></td>
+              </tr>
+              <tr>
+                <th><b>Thesis:</b></th>
+                <td><a class="body-link" href="https://drive.google.com/file/d/0BzX_a51Wy73NSk02c0tsX2ZPa3c/view?usp=sharing" target="_blank">Name That Bird: A Citizen Science Application</td>
+              </tr>
+            </table>
+          </div>
+        </section>
       </div>
-
-      <div class="call-to-action">
-        <form class="cta-form" action="index.html" method="post">
-          <label>Name</label>
-          <input type="text" name="name" value="Your Name">
-          <label>Email</label>
-          <input type="email" name="email" value="example@email.com">
-          <label>Message</label>
-          <input type="textarea" name="message" value="Tell me what's on your mind!">
-          <button type="submit" name="formButton">Send Message</button>
-        </form>
-      </div>
-
-      <div class="footer">
-        <a class="footer-link" href="/">Instagram</a>
-        <a class="footer-link" href="/">Twitter</a>
-        <a class="footer-link" href="/">Medium</a>
-      </div>
-
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("my-navbar");
+        if (x.className === "nav-items") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav-items";
+        }
+      }
+    </script>
   </body>
 </html>
