@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -12,7 +16,6 @@ body {
 }
 
 .nav-items {
-  list-style: none;
   padding: 0;
   margin: 10px 30px;
   display: flex;
@@ -181,6 +184,65 @@ body {
   text-decoration: none;
 }
 
+.body-link:visited {
+  text-decoration: none;
+  color: #00416d;
+}
+
 .body-link:hover {
   text-decoration: underline;
+}
+
+/* LP SECTION */
+
+.lp-container {
+  text-align: center;
+  background-color: #f5f1da;
+  padding-top: 60px;
+}
+
+.lp-section > h1 {
+  font-family: "Anton";
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.lp-section > h3 {
+  font-family: "Anton";
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.lp-grid {
+  display: flex;
+  margin: 0 50px;
+}
+
+.lp-grid-item {
+  flex: 50%;
+}
+
+.lp-img {
+  width: 80%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.lp-img-link:hover {
+  opacity: 0.75;
+}
+
+.lp-grid-item > h1 {
+  font-family: "Anton";
+  font-size: 2rem;
+  margin: 20px 0 5px 0;
+}
+
+.lp-grid-item > h3 {
+  font-family: "Anton";
+  font-size: 1rem;
+  margin: 0;
+}
+
+.lp-grid-item > ul {
 }
