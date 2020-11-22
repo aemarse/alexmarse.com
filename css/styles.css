@@ -257,14 +257,18 @@ ul {
   padding: 5px 0;
 }
 
+hr {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .lp-grid {
     flex-direction: column;
   }
 
-  .lp-grid-item {
-    border: 1px solid black;
-    border-collapse: collapse;
-    margin: 10px 0;
+  hr {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
