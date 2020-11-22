@@ -1,9 +1,23 @@
 body {
   margin: 0;
+  font-family: "Roboto";
 }
 
 ul {
   list-style: none;
+}
+
+.body-link:link {
+  text-decoration: none;
+}
+
+.body-link:visited {
+  text-decoration: none;
+  color: #00416d;
+}
+
+.body-link:hover {
+  text-decoration: underline;
 }
 
 /* NAVBAR */
@@ -13,6 +27,7 @@ ul {
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 1;
 }
 
 .nav-items {
@@ -111,7 +126,6 @@ ul {
 }
 
 .about-text > p {
-  font-family: "Roboto";
   font-size: 2rem;
 }
 
@@ -168,7 +182,6 @@ ul {
 }
 
 .nyu-text > table {
-  font-family: "Roboto";
   font-size: 1rem;
   text-align: left;
   margin: 50px auto;
@@ -180,17 +193,15 @@ ul {
   padding: 20px;
 }
 
-.body-link:link {
-  text-decoration: none;
-}
+@media (max-width: 800px) {
+  .nyu-section {
+    flex-direction: column;
+  }
 
-.body-link:visited {
-  text-decoration: none;
-  color: #00416d;
-}
+  .nyu-image {
+    margin: 0;
+  }
 
-.body-link:hover {
-  text-decoration: underline;
 }
 
 /* LP SECTION */
@@ -247,7 +258,6 @@ ul {
 .lp-grid-item > ul {
   text-align: left;
   padding: 0 75px;
-  font-family: "Roboto";
   font-size: 1rem;
   text-indent: -15px;
   margin-left: 15px;
@@ -271,4 +281,127 @@ hr {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+/* EUROPE SECTION */
+
+.europe-container {
+  background-color: #f2dcbb;
+}
+
+.europe-section {
+  padding: 75px 75px;
+}
+
+.europe-grid {
+  display: flex;
+  align-items: center;
+}
+
+.europe-text {
+  flex: 50%;
+  color: #070F1B;
+}
+
+.europe-text > h1 {
+  font-family: "Anton";
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+.slideshow-container {
+  flex: 50%;
+  text-align: center;
+  position: relative;
+  margin-left: 65px;
+}
+
+.slideshow-image {
+  display: none;
+}
+
+.slideshow-img {
+  max-width: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slide-caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slide-numbers {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+@media (max-width: 800px) {
+  .europe-grid {
+    flex-direction: column;
+  }
+
+  .europe-text > h1 {
+    text-align: center;
+  }
+
+  .europe-text {
+    margin-bottom: 30px;
+  }
+
+  .slideshow-container {
+    margin: 0;
+  }
+
 }

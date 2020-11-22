@@ -10,13 +10,13 @@
   <body>
 
     <nav class="navbar">
-      <ul class="nav-items" id="my-navbar">
+      <ul class="nav-items" id="navbar">
         <li class="nav-item brand"><a href="#">ALEX MARSE</a></li>
         <li class="nav-item"><a href="#nyu">NYU</a></li>
         <li class="nav-item"><a href="#lp">Local Projects</a></li>
         <li class="nav-item"><a href="#europe">Europe</a></li>
         <li class="nav-item"><a href="#c&c">Cat & Cloud</a></li>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="navbarBurger()">
           <i class="fa fa-bars"></i>
         </a>
       </ul>
@@ -92,17 +92,86 @@
           </div>
         </section>
       </div>
+      <div class="europe-container">
+        <section class="europe-section" id="europe">
+          <div class="europe-grid">
+            <div class="europe-text">
+              <h1>I spent 3.5 months traveling through Europe.</h1>
+              <p>This is some text about my Europe experience. This is some text about my Europe experience. This is some text about my Europe experience. This is some text about my Europe experience.</p>
+              <p>This is some text about my Europe experience. This is some text about my Europe experience. This is some text about my Europe experience. This is some text about my Europe experience.</p>
+              <p>This is some text about my Europe experience. This is some text about my Europe experience. This is some text about my Europe experience. This is some text about my Europe experience.</p>
+              <p>This is some text about my Europe experience. This is some text about my Europe experience. This is some text about my Europe experience. This is some text about my Europe experience.</p>
+            </div>
+            <div class="slideshow-container">
+              <div class="slideshow-image fade">
+                <div class="slide-numbers">1 / 5</div>
+                <img class="slideshow-img" src="images/camino_mile_marker_cropped.jpeg">
+                <div class="slide-caption">Caption Text</div>
+              </div>
+              <div class="slideshow-image fade">
+                <div class="slide-numbers">2 / 5</div>
+                <img class="slideshow-img" src="images/camino_bench.jpeg">
+                <div class="slide-caption">Caption Text</div>
+              </div>
+              <div class="slideshow-image fade">
+                <div class="slide-numbers">3 / 5</div>
+                <img class="slideshow-img" src="images/morroco_camel.jpeg">
+                <div class="slide-caption">Caption Text</div>
+              </div>
+              <div class="slideshow-image fade">
+                <div class="slide-numbers">4 / 5</div>
+                <img class="slideshow-img" src="images/bagnaia_wood_1.jpeg">
+                <div class="slide-caption">Caption Text</div>
+              </div>
+              <div class="slideshow-image fade">
+                <div class="slide-numbers">5 / 5</div>
+                <img class="slideshow-img" src="images/bagnaia_crew.jpeg">
+                <div class="slide-caption">Caption Text</div>
+              </div>
+              <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+              <a class="next" onclick="changeSlides(1)">&#10095;</a>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>
-      function myFunction() {
-        var x = document.getElementById("my-navbar");
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function changeSlides(n) {
+        console.log(slideIndex);
+        showSlides(slideIndex += n);
+      }
+
+      function showSlides(n) {
+        var slides = document.getElementsByClassName("slideshow-image");
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[slideIndex-1].style.display = "block";
+      }
+
+      function navbarBurger() {
+        var x = document.getElementById("navbar");
         if (x.className === "nav-items") {
           x.className += " responsive";
         } else {
           x.className = "nav-items";
         }
       }
+
     </script>
   </body>
 </html>
