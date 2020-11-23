@@ -405,3 +405,73 @@ hr {
   }
 
 }
+
+/* CAT & CLOUD SECTION */
+
+.cat-cloud-container {
+  background-color: #f5f1da;
+}
+
+.cat-cloud-section {
+  padding: 75px 75px;
+  display: flex;
+  align-items: center;
+}
+
+.cat-cloud-image {
+  flex: 50%;
+  margin-right: 30px;
+}
+
+.cat-cloud-image > img {
+  width: 100%;
+  height: auto;
+}
+
+.cat-cloud-text {
+  flex: 50%;
+  color: #070F1B;
+  text-align: center;
+}
+
+.cat-cloud-text > h1 {
+  font-family: "Anton";
+  font-size: 2.5rem;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.cat-cloud-text > h3 {
+  font-family: "Anton";
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.cat-cloud-text > p {
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 30px;
+  padding: 10px 0;
+}
+
+.cat-cloud-text > ul {
+  text-align: left;
+  padding-left: 30px;
+  text-indent: -15px;
+  margin-left: 15px;
+}
+
+.cat-cloud-text > ul > li {
+  padding: 10px 15px;
+}
+
+@media (max-width: 800px) {
+  .cat-cloud-section {
+    flex-direction: column;
+  }
+
+  .cat-cloud-image {
+    margin: 0;
+  }
+
+}
